@@ -55,7 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Manager.cs" />
     <Compile Include="Producer.cs" />
+    <Compile Include="RectManager.cs" />
     <Compile Include="Storage.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

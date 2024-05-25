@@ -24,63 +24,24 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <TextBlock Grid.Row="0" Grid.Column="0" FontSize="20" Grid.ColumnSpan="2" Margin="20" FontWeight="Bold">Producers</TextBlock>
         <TextBlock Grid.Row="1" Grid.Column="0" FontSize="20" Margin="20" FontWeight="Bold">R</TextBlock>
         <TextBlock Grid.Row="2" Grid.Column="0" FontSize="20" Margin="20" FontWeight="Bold">G</TextBlock>
         <TextBlock Grid.Row="3" Grid.Column="0" FontSize="20" Margin="20" FontWeight="Bold">B</TextBlock>
         <TextBlock Grid.Row="4" Grid.Column="0" FontSize="20" Grid.ColumnSpan="3" Margin="20" FontWeight="Bold">Consumer</TextBlock>
-        <Rectangle Grid.Row="1" Grid.Column="1" Fill="Snow" RadiusX="15" RadiusY="15" Grid.ColumnSpan="10" Margin="0 0 0 5" Stroke="black" StrokeThickness="2"/>
-        <Rectangle Grid.Row="2" Grid.Column="1" Fill="Snow" RadiusX="15" RadiusY="15" Grid.ColumnSpan="10" Margin="0 0 0 5" Stroke="black" StrokeThickness="2"/>
-        <Rectangle Grid.Row="3" Grid.Column="1" Fill="Snow" RadiusX="15" RadiusY="15" Grid.ColumnSpan="10" Margin="0 0 0 5" Stroke="black" StrokeThickness="2"/>
-        <Rectangle Grid.Row="5" Grid.Column="1" Fill="Snow" RadiusX="15" RadiusY="15" Grid.ColumnSpan="10" Margin="0 0 0 5" Stroke="black" StrokeThickness="2"/>
-        
-        <Rectangle x:Name="R1" Grid.Row="1" Grid.Column="1" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle x:Name="R2" Grid.Row="2" Grid.Column="1" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle x:Name="R3" Grid.Row="3" Grid.Column="1" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="1" Grid.Column="2" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="2" Grid.Column="2" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="3" Grid.Column="2" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="1" Grid.Column="3" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="2" Grid.Column="3" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="3" Grid.Column="3" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="1" Grid.Column="4" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="2" Grid.Column="4" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="3" Grid.Column="4" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="1" Grid.Column="5" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="2" Grid.Column="5" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="3" Grid.Column="5" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="1" Grid.Column="6" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="2" Grid.Column="6" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="3" Grid.Column="6" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="1" Grid.Column="7" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="2" Grid.Column="7" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="3" Grid.Column="7" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="1" Grid.Column="8" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="2" Grid.Column="8" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="3" Grid.Column="8" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="1" Grid.Column="9" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="2" Grid.Column="9" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="3" Grid.Column="9" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="1" Grid.Column="10" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="2" Grid.Column="10" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="3" Grid.Column="10" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
+        <Rectangle Grid.Row="1" Grid.Column="1" Fill="Snow" RadiusX="15" RadiusY="15" Grid.ColumnSpan="1" Margin="0 0 0 5" Stroke="black" StrokeThickness="2"/>
+        <Rectangle Grid.Row="2" Grid.Column="1" Fill="Snow" RadiusX="15" RadiusY="15" Grid.ColumnSpan="1" Margin="0 0 0 5" Stroke="black" StrokeThickness="2"/>
+        <Rectangle Grid.Row="3" Grid.Column="1" Fill="Snow" RadiusX="15" RadiusY="15" Grid.ColumnSpan="1" Margin="0 0 0 5" Stroke="black" StrokeThickness="2"/>
+        <Rectangle Grid.Row="5" Grid.Column="1" Fill="Snow" RadiusX="15" RadiusY="15" Grid.ColumnSpan="1" Margin="0 0 0 5" Stroke="black" StrokeThickness="2"/>
 
-        <Rectangle Grid.Row="5" Grid.Column="1" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="5" Grid.Column="2" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="5" Grid.Column="3" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="5" Grid.Column="4" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="5" Grid.Column="5" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="5" Grid.Column="6" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="5" Grid.Column="7" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="5" Grid.Column="8" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="5" Grid.Column="9" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
-        <Rectangle Grid.Row="5" Grid.Column="10" Fill="LightGray" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
+        <Rectangle x:Name="R1" Grid.Row="1" Grid.Column="1" Fill="{Binding Path=R1}" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
+
+        <Rectangle x:Name="G1" Grid.Row="2" Grid.Column="1"  Fill="{Binding Path=G1}" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
+
+        <Rectangle x:Name="B1" Grid.Row="3" Grid.Column="1"  Fill="{Binding Path=B1}" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
+
+        <Rectangle x:Name="PROD" Grid.Row="5" Grid.Column="1" Fill="{Binding Path=PROD}" RadiusX="15" RadiusY="15"  Margin="5 5 5 10"/>
 
     </Grid>
 </Window>

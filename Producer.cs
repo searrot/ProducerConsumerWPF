@@ -15,18 +15,21 @@ namespace ProducerConsumerWPF
     {
         private int id;
         private Storage commonData;
-        private ObservableCollection<int> colors;
+        private RectangleManager manager;
+        private Random rnd;
+        private string color;
         public Producer(
         int id,
         Storage commonData,
-        ObservableCollection<int> colors)
+        RectangleManager manager,
+        Random rand)
         {
             this.id = id;
             this.commonData = commonData;
-            this.colors = colors;
+            this.manager = manager;
+            rnd = rand;
         }
-
-        private Random rnd = new Random();
+        
         private bool IsAlive { get; set; }
 
         public void Start()
@@ -37,15 +40,33 @@ namespace ProducerConsumerWPF
             {
                 while (IsAlive)
                 {
+                    
                     // Эмуляция выполнения продолжительной работы:
                     Thread.Sleep(rnd.Next(5000, 8001));
                     // Получение результата:
-                    var result = rnd.Next(1000, 2001);
                     //Console.WriteLine($"{id} produced: {result}");
-                    var r = rnd.Next(200, 255);
-
-                    colors.Add(r);
-                    commonData.Put(id, result);
+                    var r = rnd.Next(0, 255);
+                    color = Convert.ToString(r, 16);
+                    if (color.Length == 1)
+                    {
+                        color = "0" + color;
+                    }
+                    switch (id)
+                    {
+                        case 0:
+                            manager.R1 = $"#{color}0000";
+                            break;
+                        case 1:
+                            manager.G1 = $"#00{color}00";
+                            break;
+                        case 2:
+                            manager.B1 = $"#0000{color}";
+                            break;
+                        default:
+                            manager.R1 = $"#000000";
+                            break;
+                    }
+                    commonData.Put(id, r);
                 }
             }).Start();
         }

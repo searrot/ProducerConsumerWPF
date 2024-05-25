@@ -6,6 +6,7 @@ using System.Deployment.Internal;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -29,30 +30,27 @@ namespace ProducerConsumerWPF
         public MainWindow()
         {
             InitializeComponent();
-            var RColors = new ObservableCollection<int>();
-            RColors.CollectionChanged += RColors_CollectionChanged;
+
+           
+            RectangleManager manager = new RectangleManager();
+
+            this.DataContext = manager;
+
+            Random rnd1 = new Random(1000);
+            Random rnd2 = new Random(2000);
+            Random rnd3 = new Random(3500);
             Storage data = new Storage();
-            var producers = new List<Producer> { new Producer(0, data, RColors), new Producer(1, data, RColors), new Producer(2, data, RColors) };
-            producers.ForEach(p => p.Start());
+            var producers = new List<Producer> { new Producer(0, data, manager, rnd2), new Producer(1, data, manager, rnd1), new Producer(2, data, manager, rnd3) };
+            Random rnd = new Random();
+            producers[0].Start();
+            producers[1].Start();
+            producers[2].Start();
+            var consumer = new Consumer(data, manager);
+            consumer.Start();
         }
-        void RColors_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
-        {
-            switch (e.Action)
-            {
-                case NotifyCollectionChangedAction.Add: // если добавление
-                    if (e.NewItems?[0] is int newColor)
-                        Console.WriteLine($"Добавлен новый объект: {newColor}");
-                    break;
-                case NotifyCollectionChangedAction.Remove: // если удаление
-                    if (e.OldItems?[0] is int oldColor)
-                        Console.WriteLine($"Удален объект: {oldColor}");
-                    break;
-                case NotifyCollectionChangedAction.Replace: // если замена
-                    if ((e.NewItems?[0] is int replacingColor) &&
-                        (e.OldItems?[0] is int replacedColor))
-                        Console.WriteLine($"Объект {replacedColor} заменен объектом {replacingColor}");
-                    break;
-            }
-        }
+       
     }
+
+   
+
 }

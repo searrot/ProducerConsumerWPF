@@ -10,14 +10,16 @@ namespace ProducerConsumerWPF
 {
     internal class Storage
     {
-        private ObservableCollection<int> _data;
-        public Storage(ObservableCollection<int> data)
+        private List<int> _data;
+        public Storage()
         {
-            _data = data;
-            _data.Add(-1);
-            _data.Add(-1);
-            _data.Add(-1);
+            _data = new List<int>(3);
+            for (int i = 0; i < 3; i++)
+            {
+                _data.Add(-1);
+            }
         }
+
 
         public void Put(int index, int value)
         {
